@@ -1,0 +1,363 @@
+:root {
+  --primary: #1f4590;
+  --secondary: #ffa451;
+  --text1: #4a4a4a;
+  --text2: #535353;
+  --bg: #d0fcff;
+  --text3: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(..//images/map-ornament.png.png);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position-x: 100%;
+  background-position-y: 5%;
+  background-color: var(--bg);
+  font-family: "Raleway", sans-serif;
+  color: var(--primary);
+  min-height: 2000px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(208, 252, 255, 0.9);
+  padding: 40px 7%;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navbar .navbar-logo a {
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: var(--primary);
+}
+
+.navbar .navbar-logo span {
+  font-weight: 600;
+  font-size: 1.87rem;
+  color: var(--secondary);
+}
+
+.navbar .navbar-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-menu a {
+  /* display: flex; */
+  font-weight: 600;
+  font-size: 1rem;
+  /* display: inline-block; */
+  margin: 0 1rem;
+}
+
+.navbar .navbar-menu a:hover {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.navbar .navbar-menu .navbar-extra {
+  background-color: var(--secondary);
+  padding: 20px 25px;
+  border-radius: 60px;
+  color: var(--text3);
+}
+
+.navbar .navbar-menu .navbar-extra:hover {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.navbar .menu-toggle {
+  display: none;
+  font-size: 40px;
+}
+
+/* hero section start */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7%;
+  flex-wrap: wrap;
+}
+
+.hero-section1 .slogan {
+  padding-top: 200px;
+  max-width: 600px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-section1 .slogan span {
+  font-size: 1.87rem;
+  color: var(--secondary);
+}
+
+.hero .hero-section1 .content1 {
+  max-width: 350px;
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text1);
+}
+
+.box-wrapper {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.box-wrapper .box {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--text1);
+}
+
+.box-wrapper .box .bx {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.box-wrapper .box p {
+  font-weight: 700;
+  color: var(--text2);
+}
+
+/* hero form panel start */
+.hero-section1 .form-panel {
+  position: relative;
+  width: 506px;
+  height: 92.5px;
+  background-color: #ffffff;
+  background-image: url(../images/Mask-GroupEdit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: var(--text3) 3px solid;
+  border-radius: 90px;
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+  box-shadow: 2px 2px 10px rgb(194, 192, 192);
+}
+
+.hero-section1 .form-panel .title-form {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
+  color: var(--text3);
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 12px;
+}
+
+.hero-section1 .form-panel .form-location,
+.form-date {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  left: 20px;
+}
+
+.hero-section1 .form-panel .form-location p,
+.form-date p {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text2);
+  padding-bottom: 5px;
+}
+.hero-section1 .form-panel .form-location > i,
+.form-date > i {
+  font-size: 24px;
+}
+.hero-section1 .form-panel .form-location p > i,
+.form-date p > i {
+  font-size: 16px;
+  top: 10px;
+}
+
+.hero-section1 .form-panel .bx-search {
+  color: var(--text3);
+  background-color: var(--secondary);
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  left: 1px;
+  font-size: 27px;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.form-location select,
+.form-date input {
+  appearance: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* hero form panel start */
+
+.hero-section1 .key-word {
+  font-size: 0.75rem;
+  color: #ababab;
+  padding-top: 10px;
+  margin-left: 60px;
+}
+/* .hero-section2 {
+  background-image: url(../slicing-travel/images/map-ornament.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+.hero-section2 .hero-travel {
+  max-width: 550px;
+}
+.hero-section2 .hero-travel img {
+  width: 100%;
+  margin-top: 150px;
+}
+
+/* pembagian section1 dan section2 */
+.hero .hero-section1 {
+  flex: 0 0 50%;
+}
+
+.hero .hero-section1 {
+  flex: 0 0 50%;
+}
+
+/* hero section end */
+
+/* Media Queries Start*/
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+    /* font-weight: none; */
+  }
+
+  /* body {
+    background-color: greenyellow;
+    font-size: 55%;
+  } */
+
+  .hero-section1 .slogan {
+    padding-top: 200px;
+    max-width: 400px;
+  }
+
+  .hero .hero-section1 .content1 {
+    max-width: 260px;
+  }
+
+  .navbar .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: block;
+    background-color: var(--primary);
+    border-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.5s;
+  }
+
+  .navbar .navbar-menu.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .menu-toggle.bx-x {
+    transform: rotate(360deg);
+    transition: 0.5s;
+  }
+
+  .navbar .navbar-menu a {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    color: var(--text3);
+    font-size: 1.5rem;
+  }
+
+  /* .navbar .navbar-menu a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid var(--secondary);
+    transform: scaleX(0);
+    transition: 0.2s;
+  }
+
+  .navbar .navbar-menu a:hover::after {
+    transform: scaleX(0.1);
+  } */
+
+  .navbar .navbar-menu .navbar-extra {
+    padding: 10px 15px;
+    color: var(--primary);
+  }
+
+  .navbar .navbar-menu .navbar-extra:hover {
+    color: var(--text3);
+  }
+
+  .navbar .menu-toggle {
+    display: initial;
+    font-size: 40px;
+
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 65%;
+    /* font-weight: none; */
+  }
+
+  body {
+    background-color: greenyellow;
+    /* font-size: 55%; */
+  }
+
+  .hero-section1 .slogan {
+    padding-top: 200px;
+    max-width: 300px;
+  }
+
+  .hero .hero-section1 .content1 {
+    max-width: 190px;
+  }
+}
